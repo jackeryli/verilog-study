@@ -5,12 +5,11 @@ module Zerodetector(in, out);
     integer i;
     
     always@(*) begin
-        i = in;
+        i = 0;
         out = 0;
         while(i <= 7) begin
             if(in[i] == 0) out = out + 1;
             i = i + 1;
         end
-        out = out;
     end
 endmodule

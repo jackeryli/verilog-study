@@ -5,5 +5,5 @@ module Rom(oeb,data,address);
     output [15:0] data;
     reg [15:0] mem [0:7];
 
-    assign data = (oeb == 1'b0)?mem[address]:1'bz;
+    assign data = (oeb == 1'b0)?mem[address]:16'bz;
 endmodule
