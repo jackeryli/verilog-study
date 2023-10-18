@@ -7,9 +7,4 @@ module ParallelShiftLeft(clk, reset, din, qout);
         if(!reset) qout <= 4'b0;
         else qout <= {qout<<1, din};
     end
-
-
-
-
-
 endmodule

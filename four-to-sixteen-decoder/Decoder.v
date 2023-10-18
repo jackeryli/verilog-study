@@ -24,6 +24,5 @@ module Decoder4to16 (in, out);
       default: out = 16'b0000000000000000;
     endcase
   end
-
 endmodule
 
