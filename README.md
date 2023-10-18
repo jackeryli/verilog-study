@@ -13,3 +13,13 @@ Provide basic module implementation
 - 4-bit universal binary counter
 - 8x16 ROM
 - 8x16 RAM
+
+## How to run
+
+Intel ModelSim 
+
+- Create project
+- Add existing files
+- Compile all
+- Start simulation
+- Run 100 or Run all
