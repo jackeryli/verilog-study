@@ -9,7 +9,7 @@ module Counter(clk, clear, count, load, din, c_out, a_count);
         if(~clear)
             a_count <= 4'b0000;      // reset
         else begin
-            case({load,count})
+            casex({load,count})
                 2'b1x: a_count <= din;
                 2'b01: a_count <= a_count + 1;
                 default: a_count <= a_count;
